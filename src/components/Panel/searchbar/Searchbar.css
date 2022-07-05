@@ -1,0 +1,57 @@
+.Card {
+  padding: 1px;
+  border-radius: var(--border-radius);
+  background: linear-gradient(-67deg, rgba(#c8d8e7, .7), rgba(255,255,255,.8));
+  overflow: hidden;
+  box-shadow: 
+    -2px -2px 6px rgba(black, .6),
+    2px 2px 12px black;
+  border-radius: 10px;
+}
+
+.CardInner {
+  padding: 10px;
+  background-color: white;
+}
+
+.container {
+  display: flex;
+}
+
+.Icon {
+  min-width: 46px;
+  min-height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--border-radius);
+}
+
+label {
+  font-family: "Hind", sans-serif;
+  display: block;
+  color: black; 
+  -webkit-text-fill-color: transparent;
+}
+
+input {
+  background-color: #e3edf7;
+  padding: 16px;
+  border: none;
+  display: block;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 600;
+  color: black;
+  -webkit-appearance: none;
+  transition: all 240ms ease-out;
+
+};
+  
+.InputContainer {
+  --top-shadow: inset 1px 1px 3px #c5d4e3, inset 2px 2px 6px #c5d4e3;
+  --bottom-shadow: inset -2px -2px 4px rgba(255,255,255, .7);
+  
+  position: relative;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}

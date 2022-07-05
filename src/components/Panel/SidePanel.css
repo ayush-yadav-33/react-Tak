@@ -1,0 +1,60 @@
+.SidePanelContainer{
+    position: fixed;
+    background-color: #EBF2F7;
+    padding: 1em;
+    width: fit-content;
+    height: 95vh;
+    border-radius: 20px;
+    box-shadow: 0px 0px 25px -10px rgba(0,0,0,0.75);
+
+}
+.SidePanel__Container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90%;
+}
+.content{
+    background-color: white;
+    line-height: 0px;
+    width: 13em;
+    height: fit-content;
+    padding: 1em;
+    margin: 1em 1em;
+    border-radius: 5px;
+    box-shadow: 0px 0px 25px -10px rgba(0,0,0,0.75);
+}
+
+.smallContainer{
+    font-size: large;
+    font-weight: 750;
+    text-align: center;
+    cursor: pointer;
+}
+.viewContainer{
+    display: flex;
+    justify-content: center;
+}
+.view1{
+    background-color: #98EEC8;
+    width: fit-content;
+    border-radius: 8px 0 0 8px;
+    padding: 7px 0;
+}
+.view2{
+    background-color: #DAE2EA;
+    width: fit-content;
+    border-radius: 0 8px 8px 0;
+    padding: 7px 0;
+}
+.nav__search{
+    display: none;
+}
+@media screen and (max-width: 1024px) {
+    .SidePanelContainer{
+        display: none;
+    }
+    .nav__search{
+        display: block;
+    }
+}

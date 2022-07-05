@@ -1,0 +1,154 @@
+.logo{
+    padding: 12px 10px; 
+    margin: 5px 10px;
+    background-color: rgb(77, 74, 74);
+    text-decoration: none;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 15px;
+    animation-duration: 1s;
+    animation-direction: reverse;
+    animation-name: logorotate; 
+}
+
+@keyframes logorotate {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(560deg);
+    }
+  }
+
+.navContent{
+    color: #36395A;
+    cursor: pointer;
+    padding:0 5px;
+    margin:5px;
+    border-radius: 5px;
+    transition: box-shadow .15s,transform .15s;
+    will-change: box-shadow,transform;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: transparent;
+}
+
+  
+  .navContent:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    transform: translateY(-2px);
+  }
+  
+.itemlink{
+    margin: 10px 10px 0 auto;
+    border: 1px sloid black;
+}
+
+.navlink{
+    height: fit-content ;
+    display: flex;
+    /* flex-wrap: wrap;
+    align-items: center; */
+    /* justify-content: center;   */
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+    margin: 5px;
+    /* padding: 5px 0; */
+    border-radius: 20px ;
+    box-sizing: border-box;
+}
+
+.sidebar{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-between;
+    top: 0.5rem;
+    right: 1rem;
+    height: 20px;
+    width: 40px;
+    /* background-color: black; */
+    border: none;
+    margin-top: 2px;
+}
+
+.sidebar .Bar{
+    height: 2px;
+    width: 90%;
+    background-color: gray ;
+    border-radius: 10px;
+
+}
+.sideitembox{
+    margin: 3rem 0 0 0;
+    
+}
+
+.slidesidebar{
+    position: absolute;
+    margin-left: 30%;
+    height: 100%;
+    width: 70%;
+    background-color: #EBF2F7;
+    z-index: 999;    
+    animation-duration: 0.7s;
+    animation-direction: reverse;
+    animation-name: rotate;  
+}
+
+.sidenavContent{
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+    padding: 10px;
+    margin: 10px;
+    margin-left: auto;
+    border-bottom: 1px solid white;
+
+}
+
+@keyframes rotate {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+:hover.sidenavContent{
+    background-color: grey;
+    border-radius: 10px;
+}
+
+.mobile__InputContainer input{
+  padding: 10px;
+  background-color: lightgray;
+  width: 55vw;
+  border-radius: 30px;
+  margin-top: 5px;
+}
+@media screen and (max-width:500px) {
+
+    .itemlink{
+        display: none;
+    }
+
+    .sidebar{
+        display: flex;
+        margin-left: auto;
+        margin-top: 10px;
+    }    
+
+}
+@media screen and (min-width:500px) {
+    .navlink{
+        /* margin-left: 3rem; */
+        padding-left: 2em;
+    }
+    .menu_bars{
+        display: none;
+    }
+
+}

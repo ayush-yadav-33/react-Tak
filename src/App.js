@@ -6,7 +6,7 @@ import ContextProvider from './context/Context';
 
 
 function App() {
-  return (
+  return (git
     <ContextProvider>
     <div className="App">
       <SidePanel />

@@ -4,7 +4,7 @@ import './Searchbar.css'
 
 function SearchBar() {
 
-  const { setSearch, search } = useContext(Context);
+  const { setSearch } = useContext(Context);
 
   const onSearchChange = (e) => {
     setSearch(e.target.value);
